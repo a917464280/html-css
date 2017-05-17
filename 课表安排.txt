@@ -1,0 +1,41 @@
+第一天 2017.5.17
+1.html是什么？H5时代的来临、以及H5的目标
+2.认识html文件基本结构；
+3.认识head标签
+4.meta标签---去除iphone数字转电话格式、viewport以及参数、常用的浏览器内核切换、网页的编码
+5.html4  document HTML5的头
+6.盒模型的理解；
+7.认识标签：语义化、body、div、p、h1~h6、br、ul、ol、li、tabel、a、img、form、、、
+
+
+第二天2017.5.18
+1.H5新增的元素和废除的元素
+2.新增的主体结构元素---articile、section、nav、aside、time元素、pubdate属性
+3.新增的非主体结构元素---header、footer、address、main元素
+4.多媒体---video、audio
+
+
+第三天2017.5.19
+1.CSS是什么？
+css属性：背景、字体、颜色、定位、
+2.内联式css、嵌入式css、外部式css,以及优先级
+3.css选择器？---标签选择器、类选择器、ID选择器、子选择器、伪类选择器
+4.css的继承、层叠和特殊性
+5.css的格式化排版
+
+第四天2017.5.20
+1.css盒模型、flex布局
+2css的布局模型
+3.css的代码缩写 例 margin：上 右  下 左；
+4.滚动条的样式修改
+
+第五天2017.5.21
+1.less以及语法
+2.PS的简单切图；
+3.兼容性问题解决：双倍边距、清浮动、margin负值、透明图片、单像素
+
+
+
+
+
+
