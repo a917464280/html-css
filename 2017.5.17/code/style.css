@@ -1,7 +1,193 @@
+.clearfix:after{ content:""; height:0; visibility:hidden; display:block; clear:both;}
+.clearfix{ zoom:1;}
 
-.box {
-    width: 100px;
-    height: 200px;
-    background: red;
-    padding: 50px;
+body {
+    font-family: "Microsoft YaHei";
 }
+
+ul,li {
+    list-style: none;
+}
+.panel {
+    width: 310px;
+    margin: 100px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.panel-title {
+    padding: 0 10px;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+}
+.panel-title__words {
+    float: left;
+    font-size: 14px;
+    color: #666;
+    font-weight: bold;
+
+}
+.panel-title__more {
+    float: right;
+    font-size: 12px;
+    color: #005ea7;
+    text-decoration: none;
+}
+.panel__box {
+    padding: 10px;
+    border-left: 1px solid #f1f1f1;
+    border-right: 1px solid #f1f1f1;
+    border-bottom: 1px solid #f1f1f1;
+    border-top: 2px solid #aaa;
+    font-size: 14px;
+    color: #666;
+
+}
+.panel__box_fl {
+    float: left;
+    width: 144px;
+    line-height: 25px;
+    border-right: 1px solid #f1f1f1;
+    text-align: left;
+
+}
+.panel__box_fr {
+    float: left;
+    line-height: 25px;
+    margin-left: 10px;
+    text-align: left;
+
+}
+
+/*作业2*/
+.box {
+    width: 235px;
+    margin: 100px;
+}
+.box-head {
+    height: 44px;
+    line-height: 44px;
+}
+.box-head__hot {
+    float: left;
+    margin: 0 8px 0 12px;
+    font-size: 22px;
+    color: #000;
+}
+.box-head__rank {
+    float: left;
+    font-size: 14px;
+    color: #666;
+
+}
+.box-head__more {
+    float: right;
+    font-size: 14px;
+    color: #2d64b3;
+    text-decoration: none;
+}
+.box-item__list {
+    height: 25px;
+    line-height: 25px;
+    padding-left: 8px;
+}
+.box-item__list__num {
+    float: left;
+    font-size: 12px;
+    color: #999;
+    margin-right: 10px;
+}
+.box-item__list__num_red {
+    font-size: 18px;
+    color: red;
+    margin-right: 7px;
+}
+.box-item__list__icon {
+    float: left;
+    width: 6px;
+    height: 3px;
+    margin: 12px 10px 0 0;
+    background: url("sprite.png") no-repeat center center;
+    background-size: 20px 100px;
+    background-position: 0 -35px;
+
+}
+.box-item__list__icon_up {
+    float: left;
+    width: 7px;
+    height: 8px;
+    margin: 9px 10px 0 0;
+    background: url("sprite.png") no-repeat center center;
+    background-size: 20px 100px;
+    background-position: 0 -72px;
+}
+.box-item__list__icon_down {
+    float: left;
+    width: 8px;
+    height: 8px;
+    margin: 9px 10px 0 0;
+    background: url("sprite.png") no-repeat center center;
+    background-size: 20px 100px;
+    background-position: 0 -91px;
+
+}
+
+
+
+.box-item__list__song {
+    float: left;
+    width: 64px;
+    margin-right: 14px;
+    white-space: nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    font-size: 14px;
+    color: #2d64b3;
+
+}
+.box-item__list__name {
+    float: left;
+    font-size: 14px;
+    color: #2d64b3;
+    width: 50px;
+    white-space: nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+
+}
+.box-item__list__play {
+    float: left;
+    width: 7px;
+    height: 11px;
+    margin: 8px 10px 0 20px;
+    background: url("sprite.png") no-repeat center center;
+    background-size: 20px 100px;
+    background-position: 0 0;
+}
+
+.box-item__list__download {
+    float: left;
+    width: 10px;
+    height: 11px;
+    margin-top: 9px;
+    background: url("sprite.png") no-repeat center center;
+    background-size: 20px 100px;
+    background-position: 0 -50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
