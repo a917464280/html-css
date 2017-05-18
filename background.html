@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        .box{ background:url(http://upload.wikimedia.org/wikipedia/en/2/24/Lenna.png) no-repeat center center;
+            width:300px;
+            height:300px;
+            border:solid 25px rgba(0,0,0,0.5);
+            padding:25px;
+            float:left;
+            margin-right:5px; margin-bottom:5px;
+            box-sizing:border-box;
+
+        }
+        .contain .box{
+            background-size: contain;
+        }
+        .positioned .box{
+            background-position:top left;
+        }
+        .box span{color:#fff; text-align:center; display:block; font-size:20px; font-weight:bold; height:100%; background-color:rgba(256,256,256,0.5);}
+
+        .box1{
+            background-clip:padding-box;
+            background-origin:border-box;
+        }
+
+        .box2{
+            background-clip:padding-box;
+            background-origin:padding-box;
+        }
+
+        .box3{
+            background-clip:padding-box;
+            background-origin:content-box;
+        }
+
+        .box4{
+            background-clip:border-box;
+            background-origin:border-box;
+        }
+
+        .box5{
+            background-clip:border-box;
+            background-origin:padding-box;
+        }
+
+        .box6{
+            background-clip:border-box;
+            background-origin:content-box;
+        }
+
+        .box7{
+            background-clip:content-box;
+            background-origin:border-box;
+        }
+
+        .box8{
+            background-clip:content-box;
+            background-origin:padding-box;
+        }
+
+        .box9{
+            background-clip:content-box;
+            background-origin:content-box;
+        }
+
+    </style>
+
+</head>
+<body>
+<h3>Image size default - origin has no impact</h3>
+<div class="box box4" > <span>clip:border<br>
+  origin:any</span> </div>
+<div class="box box1"> <span>clip:padding<br>
+  origin:any</span> </div>
+<div class="box box7"  > <span>clip:content<br>
+  origin:any</span> </div>
+<br clear="all"/>
+<h3>Image position top, left</h3>
+<div class="positioned">
+    <div class="box box4"> <span>clip:border<br>
+    origin:border</span> </div>
+    <div class="box box5"> <span>clip:border<br>
+    origin:padding</span> </div>
+    <div class="box box6"> <span>clip:border<br>
+    origin:content</span> </div>
+
+
+    <div class="box box1" style="clear:both;"> <span>clip:padding<br>
+    origin:border</span> </div>
+    <div class="box box2"> <span>clip:padding<br>
+    origin:padding</span> </div>
+    <div class="box box3"> <span>clip:padding<br>
+    origin:content</span> </div>
+
+
+    <div class="box box7" style="clear:both;"> <span>clip:content<br>
+    origin:border</span> </div>
+    <div class="box box8"> <span>clip:content<br>
+    origin:padding</span> </div>
+    <div class="box box9"> <span>clip:content<br>
+    origin:content</span> </div>
+</div>
+<br clear="all"/>
+
+<h3>Image size "contained"</h3>
+<div class="contain">
+
+    <div class="box box4"> <span>clip:border<br>
+    origin:border</span> </div>
+    <div class="box box5"> <span>clip:border<br>
+    origin:padding</span> </div>
+    <div class="box box6"> <span>clip:border<br>
+    origin:content</span> </div>
+
+
+    <div class="box box1" style="clear:both;"> <span>clip:padding<br>
+    origin:border</span> </div>
+    <div class="box box2"> <span>clip:padding<br>
+    origin:padding</span> </div>
+    <div class="box box3"> <span>clip:padding<br>
+    origin:content</span> </div>
+
+
+    <div class="box box7" style="clear:both;"> <span>clip:content<br>
+    origin:border</span> </div>
+    <div class="box box8"> <span>clip:content<br>
+    origin:padding</span> </div>
+    <div class="box box9"> <span>clip:content<br>
+    origin:content</span> </div>
+</div>
+
+
+</body>
+</html>
