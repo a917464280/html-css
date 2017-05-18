@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择器</title>
+    <style>
+        .test > li > a {
+            color: #f00;
+        }
+
+        .words {
+            margin-top: 50px;
+            width: 200px;
+        }
+
+        .words:first-letter {
+             float: left;
+             font-size: 40px;
+             color: red;
+             font-weight: bold;
+         }
+
+        .words:first-line {color:#090;}
+        .words::selection {background:#f60;color:#000;}
+
+    </style>
+</head>
+<body>
+<!--子选择器-->
+<ul class="test">
+    <li>
+        <a href="">列表项目1</a>
+        <ul>
+            <li><a href="?">项目列表1.1</a></li>
+            <li><a href="?">项目列表1.2</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="">列表项目2</a>
+        <ul>
+            <li><a href="">项目列表2.1</a></li>
+            <li><a href="">项目列表2.2</a></li>
+        </ul>
+    </li>
+    <li><a href="">列表项目</a></li>
+    <li><a href="">列表项目</a></li>
+</ul>
+
+<!--first-letter-->
+<p class="words">
+    今天，阳光明媚，晴空万里，非常适合户外活动，如踏青、远足之类的。长期坐在办公室的同学们要多注意运动
+</p>
+
+
+
+
+</body>
+</html>
