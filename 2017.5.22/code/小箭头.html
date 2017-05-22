@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        #demo11 {
+            width: 10px;
+            height: 10px;
+            border: 10px solid #000;
+            border-left-color: red;
+            margin-bottom: 50px;
+        }
+
+        #demo12 {
+            width: 0px;
+            height: 0px;
+            border: 10px solid transparent;
+            border-left-color: red;
+        }
+
+        #demo15 {
+            position: relative;
+        }
+
+        #demo15:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            border: 10px solid transparent;
+            border-left-color: red;
+        }
+
+        #demo16{
+            position: relative;
+        }
+        #demo16:after, #demo16:before {
+            border: 10px solid transparent;
+            border-left: 10px solid #fff;
+            width: 0;
+            height: 0;
+            position: absolute;
+            top: 0;
+            right: -20px;
+            content: ' '
+        }
+
+        #demo16:before {
+            border-left-color: #f00;
+            right: -21px;
+        }
+    </style>
+</head>
+<body>
+<div id="demo11"></div>
+<div id="demo12"></div>
+<div id="demo15">我是文字</div>
+
+
+<span id="demo16">文字内容</span>
+
+</body>
+</html>
