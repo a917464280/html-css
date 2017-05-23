@@ -10,9 +10,14 @@
             border: 1px solid red;
         }
         .box img{
-            width:25%;
+            width:calc(100% / 4 - 40px);
             margin:20px;
             float:left;
+        }
+        @media (max-width:600px){
+            .box img{
+                width:calc(100% / 2 - 40px);
+            }
         }
 
     </style>
@@ -26,4 +31,3 @@
 </div>
 
 </body>
-</html>

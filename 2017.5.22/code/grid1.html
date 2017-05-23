@@ -2,86 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>grid1</title>
     <style>
-
-        body {
-            padding-top: 20px;
-            background: #fbfbfb;
-        }
-        .grid1 {
+        .grid-1 {
             display: grid;
-            grid-template-columns: 150px 20px 150px 20px 150px;
-            grid-template-rows: auto 20px auto 20px auto;
+            grid-template-columns: 300px 200px 100px;
+            grid-template-rows: 100px 50px;
         }
-        /* items */
-
-        .grid1 div {
+        .grid-1 div {
             color: white;
             font-size: 20px;
             padding: 20px;
         }
-
-        /* specific item styles */
-
-        .item1 {
+        .grid-1 div:nth-child(1) {
             background: #b03532;
-            grid-column: 1;
-            grid-row: 1;
         }
-        .item2 {
+        .grid-1 div:nth-child(2) {
             background: #33a8a5;
-            grid-column: 3;
-            grid-row: 1;
+            /*grid-column: 2 / 4;*/
+            /*grid-row: 1 / 2;*/
+
+            /*grid-column-start: 2;*/
+            /*grid-column-end: 4;*/
+            /*grid-row-start: 1;*/
+            /*grid-row-end: 2;*/
         }
-        .item3 {
+        .grid-1 div:nth-child(3) {
             background: #30997a;
-            grid-column: 5;
-            grid-row: 1;
+
+
         }
-        .item4 {
+        .grid-1 div:nth-child(4) {
             background: #6a478f;
-            grid-column: 1;
-            grid-row: 3;
+
         }
-        .item5 {
+        .grid-1 div:nth-child(5) {
             background: #da6f2b;
-            grid-column: 3;
-            grid-row: 3;
         }
-        .item6 {
+        .grid-1 div:nth-child(6) {
             background: #3d8bb1;
-            grid-column: 5;
-            grid-row: 3;
         }
-        .item7 {
-            background: #e03f3f;
-            grid-column: 1;
-            grid-row: 5;
-        }
-        .item8 {
-            background: #59a627;
-            grid-column: 3;
-            grid-row: 5;
-        }
-        .item9 {
-            background: #4464a1;
-            grid-column: 5;
-            grid-row: 5;
-        }
+
     </style>
 </head>
 <body>
-<div class="grid1">
+<div class="grid-1">
     <div class="item1">1</div>
     <div class="item2">2</div>
     <div class="item3">3</div>
     <div class="item4">4</div>
     <div class="item5">5</div>
     <div class="item6">6</div>
-    <div class="item7">7</div>
-    <div class="item8">8</div>
-    <div class="item9">9</div>
 </div>
 
 </body>
